@@ -1,17 +1,23 @@
 package Task5;
 
 public class Main {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
-        int a = 9;
-        if(a >= 0 ){
-            System.out.println("Число положительное");
-        } else{
-            System.out.println("Число отрицательное");
+        int[] arr = {20, 5, 6, 8, 7, 4, 820, 4};
+        int max = arr[1];
+        int min = arr[1];
+
+        for(int i = 0; i < arr.length; i++){
+            if (arr[i] > max){
+              max = arr[i];
+            } if(arr[i] < min){
+              min = arr[i];
+            }
         }
+
+        System.out.print("max = " + max + "  min = " + min);
 
 
 
     }
-
 }
